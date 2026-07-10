@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>车辆查询</title>
+</head>
+<body>
+    <h2>车辆信息查询</h2>
+    <form action="https://info.vecc.org.cn/ve/vin/index" method="POST">
+        <p>车架号（VIN）：</p>
+        <input type="text" name="vin" value="LB37622Z5TX629078" readonly style="width:300px;">
+        <p>发动机编号后6位：</p>
+        <input type="text" name="engine" required>
+        <p>验证码：</p>
+        <input type="text" name="captcha" required>
+        <br><br>
+        <button type="submit">查询</button>
+    </form>
+    <p style="color:gray;font-size:12px;">车架号已自动填写，请补充其他信息后点击查询。</p>
+</body>
+</html>
