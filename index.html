@@ -1,97 +1,106 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0037)https://info.vecc.org.cn/ve/vin/index -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="zh-CN" xml:lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>随车清单</title>
-    <style>
-        * {
-            margin: 0;
+    
+    <meta content="none" name="Robots">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--使用webkit内核-->
+	<meta name="renderer" content="webkit">
+	<script type="text/javascript" src="./index_files/JQuery-1.9.1.min.js.下载" xml:space="preserve"></script>
+	<script xml:space="preserve">
+		if(null){
+			alert(null);
+		}
+	    $(function(){
+	    	$("#vaild").click(function(){
+    			$(this).parent().children("img:eq(0)").attr("src","../kaptcha.jpg"+"?t=" + Math.random());
+    		});
+	    });
+	    $(function(){
+	        if(!placeholderSupport()){   // 判断浏览器是否支持 placeholder
+	            $('[placeholder]').focus(function() {
+	                var input = $(this);
+	                if (input.val() == input.attr('placeholder')) {
+	                    input.val('');
+	                    input.removeClass('placeholder');
+	                }
+	            }).blur(function() {
+	                var input = $(this);
+	                if (input.val() == '' || input.val() == input.attr('placeholder')) {
+	                    input.addClass('placeholder');
+	                    input.val(input.attr('placeholder'));
+	                }
+	            }).blur();
+	        };
+	    });
+	    function placeholderSupport() {
+	        return 'placeholder' in document.createElement('input');
+	    }
+	</script>
+<style type="text/css" xml:space="preserve">
+        html, body
+        {
+            height: 100%;
+            overflow: auto;
+        }
+        body
+        {
             padding: 0;
-            box-sizing: border-box;
-            font-family: "Microsoft Yahei", Arial, sans-serif;
+            margin: 0;
         }
-        body {
-            background-color: #f5f7fa;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-            margin-bottom: 30px;
-            font-size: 28px;
-        }
-        .info-item {
-            display: flex;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #eee;
-        }
-        .label {
-            width: 120px;
-            font-weight: bold;
-            color: #34495e;
-        }
-        .value {
-            flex: 1;
-            color: #2c3e50;
-        }
-        .footer {
-            margin-top: 30px;
-            text-align: center;
-            color: #7f8c8d;
-            font-size: 14px;
-        }
-    </style>
+    	.placeholder{ color: #999;}
+    </style>  
 </head>
-<body>
-    <div class="container">
-        <h1>随车清单</h1>
-        
-        <div class="info-item">
-            <div class="label">车辆品牌：</div>
-            <div class="value">吉利缤越</div>
-        </div>
-        <div class="info-item">
-            <div class="label">车辆型号：</div>
-            <div class="value">吉利缤越 260T DCT 铂金版</div>
-        </div>
-        <div class="info-item">
-            <div class="label">VIN 车架号：</div>
-            <div class="value">L6T7722Z8NN000000</div>
-        </div>
-        <div class="info-item">
-            <div class="label">发动机号：</div>
-            <div class="value">JLC4G15BXXXXXX</div>
-        </div>
-        <div class="info-item">
-            <div class="label">车身颜色：</div>
-            <div class="value">磁性灰</div>
-        </div>
-        <div class="info-item">
-            <div class="label">出厂日期：</div>
-            <div class="value">2025-06-15</div>
-        </div>
-        <div class="info-item">
-            <div class="label">销售日期：</div>
-            <div class="value">2025-07-01</div>
-        </div>
-        <div class="info-item">
-            <div class="label">备注：</div>
-            <div class="value">随车工具、备胎、说明书齐全</div>
-        </div>
+<body bgcolor="#FFFFFF" text="#000000"> 
+	<form name="frmVin" method="post" action="https://info.vecc.org.cn/ve/vin/index" enctype="application/x-www-form-urlencoded">    
+		<table width="320" border="0" align="center" cellspacing="0" cellpadding="0" height="480">
+		  <tbody><tr> 
+		    <td height="331" background="./index_files/bk.jpg" valign="top" rowspan="1" colspan="1"> 
+		      <table width="260" border="0" align="center" cellpadding="0" cellspacing="0">
+		        <tbody><tr> 
+		          <td height="80" rowspan="1" colspan="1" style="text-align: center;">
+		          	<a style="vertical-align: middle;text-align: center;font-size: 20px;font-weight: bold;color: #2778c9;text-decoration: none;" href="https://info.vecc.org.cn/ve/" title="点击返回公众查询" shape="rect">车辆信息公众查询</a>
+		          </td>
+		        </tr>
+		        <tr> 
+		          <td valign="top" align="center" height="30" rowspan="1" colspan="1">
+				   <input type="text" name="vin" placeholder="请输入VIN编号" size="35" style="HEIGHT: 30px" value="">
+				</td>
+		        </tr>
+		        <tr> 
+		          <td height="50" rowspan="1" colspan="1"> 
+		            <div align="center"> 
+		              <input type="text" name="fdjh" placeholder="请输入发动机编号后6位" size="35" style="HEIGHT: 30px" value="">
+		              </div>
+		          </td>
+		        </tr>
+		        <tr> 
+		          <td height="50" rowspan="1" colspan="1"> 
+		            <div align="center"> 
+		              <input type="text" name="vaild" placeholder="请输入验证码" size="35" style="HEIGHT: 30px">
+		            </div>
+		          </td>
+		        </tr>
+		        <tr> 
+		          <td height="60" rowspan="1" colspan="1">
+		          <div align="center"> 
+					<img style="margin-top:0px;cursor: pointer;" title="点击刷新验证码" id="vaild" height="32" width="98" align="absmiddle" src="./index_files/kaptcha.jpg"> 
+				</div>
+		          </td>
+		        </tr>
+		        <tr> 
+		          <td height="60" rowspan="1" colspan="1">
+		            <div align="center">
+		            <a href="javascript:document.frmVin.submit();" shape="rect"><img src="./index_files/query.jpg" width="257" height="39" border="0"></a>
+		            </div>
+		          </td>
+		        </tr>
+		      </tbody></table>
+		    </td>
+		  </tr>
+	</tbody></table>
+</form> 
 
-        <div class="footer">
-            本清单为静态展示页，仅供随车查阅使用
-        </div>
-    </div>
-</body>
-</html>
+
+</body></html>
