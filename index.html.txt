@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随车清单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        .info-item {
+            display: flex;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .label {
+            width: 120px;
+            font-weight: bold;
+            color: #34495e;
+        }
+        .value {
+            flex: 1;
+            color: #2c3e50;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>随车清单</h1>
+        
+        <div class="info-item">
+            <div class="label">车辆品牌：</div>
+            <div class="value">吉利缤越</div>
+        </div>
+        <div class="info-item">
+            <div class="label">车辆型号：</div>
+            <div class="value">吉利缤越 260T DCT 铂金版</div>
+        </div>
+        <div class="info-item">
+            <div class="label">VIN 车架号：</div>
+            <div class="value">L6T7722Z8NN000000</div>
+        </div>
+        <div class="info-item">
+            <div class="label">发动机号：</div>
+            <div class="value">JLC4G15BXXXXXX</div>
+        </div>
+        <div class="info-item">
+            <div class="label">车身颜色：</div>
+            <div class="value">磁性灰</div>
+        </div>
+        <div class="info-item">
+            <div class="label">出厂日期：</div>
+            <div class="value">2025-06-15</div>
+        </div>
+        <div class="info-item">
+            <div class="label">销售日期：</div>
+            <div class="value">2025-07-01</div>
+        </div>
+        <div class="info-item">
+            <div class="label">备注：</div>
+            <div class="value">随车工具、备胎、说明书齐全</div>
+        </div>
+
+        <div class="footer">
+            本清单为静态展示页，仅供随车查阅使用
+        </div>
+    </div>
+</body>
+</html>
